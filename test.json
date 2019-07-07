@@ -1,24 +1,92 @@
 [
 {
-CAL: "740",
-FAT: "41",
-CHOL: "125",
-SALT: "1480",
-CARB: "51",
-FBR: "4",
-ITEM: "Bacon Clubhouse Burger 9.7 oz (274 g)",
-PRO: "40",
-CATEGORY: "BURGERSANDWICH"
+    PRO: "product name 1 brand Apple",
+    GRA: "graphic name 1 brand Apple",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",    
+    ITEM: "Description 1",
+    BRAND: "APPLE"
 },
 {
-CAL: "610",
-FAT: "26",
-CHOL: "125",
-SALT: "1750",
-CARB: "50",
-FBR: "3",
-ITEM: "Premium Grilled Chicken Bacon Clubhouse Sandwich 10 oz (285 g)",
-PRO: "45",
-CATEGORY: "BURGERSANDWICH"
+    PRO: "product name 2 brand Apple",
+    GRA: "graphic name 2 brand Apple",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 2",
+    BRAND: "APPLE"
+},
+{
+    PRO: "product name 3 brand Apple",
+    GRA: "graphic name 3 brand Apple",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 3",
+    BRAND: "APPLE"
+},
+{
+    PRO: "product name 1 brand Lenovo",
+    GRA: "graphic name 1 brand Lenovo",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 1",
+    BRAND: "LENOVO"
+},
+{
+    PRO: "product name 2 brand Lenovo",
+    GRA: "graphic name 2 brand Lenovo",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 2",
+    BRAND: "LENOVO"
+},
+{
+    PRO: "product name 3 brand Lenovo",
+    GRA: "graphic name 3 brand Lenovo",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 3",
+    BRAND: "LENOVO"
+},
+{
+    PRO: "product name 1 brand HP",
+    GRA: "graphic name 1 brand HP",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 1",
+    BRAND: "HP"
+},
+{
+    PRO: "product name 2 brand HP",
+    GRA: "graphic name 2 brand HP",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 2",
+    BRAND: "HP"
+},
+{
+    PRO: "product name 3 brand HP",
+    GRA: "graphic name 3 brand HP",
+    COS: "125.0",
+    MSRP: "1480.0",
+    QH: "51",
+    QB: "4",
+    ITEM: "Description 3",
+    BRAND: "HP"
 }
 ]
