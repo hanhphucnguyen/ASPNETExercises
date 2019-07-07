@@ -1,9 +1,9 @@
 [
 {
     PRO: "product name 1 brand Apple",
-    GRA: "graphic name 1 brand Apple",
-    COS: "125.0",
-    MSRP: "1480.0",
+    GRA: "graapple1",
+    COS: "125",
+    MSRP: "1480",
     QH: "51",
     QB: "4",    
     ITEM: "Description 1",
@@ -11,7 +11,7 @@
 },
 {
     PRO: "product name 2 brand Apple",
-    GRA: "graphic name 2 brand Apple",
+    GRA: "graapple2",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -21,7 +21,7 @@
 },
 {
     PRO: "product name 3 brand Apple",
-    GRA: "graphic name 3 brand Apple",
+    GRA: "graapple3",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -31,7 +31,7 @@
 },
 {
     PRO: "product name 1 brand Lenovo",
-    GRA: "graphic name 1 brand Lenovo",
+    GRA: "gralenovo1",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -41,7 +41,7 @@
 },
 {
     PRO: "product name 2 brand Lenovo",
-    GRA: "graphic name 2 brand Lenovo",
+    GRA: "gralenovo2",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -51,7 +51,7 @@
 },
 {
     PRO: "product name 3 brand Lenovo",
-    GRA: "graphic name 3 brand Lenovo",
+    GRA: "gralenovo3",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -61,7 +61,7 @@
 },
 {
     PRO: "product name 1 brand HP",
-    GRA: "graphic name 1 brand HP",
+    GRA: "grahp1",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -71,7 +71,7 @@
 },
 {
     PRO: "product name 2 brand HP",
-    GRA: "graphic name 2 brand HP",
+    GRA: "grahp2",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
@@ -81,7 +81,7 @@
 },
 {
     PRO: "product name 3 brand HP",
-    GRA: "graphic name 3 brand HP",
+    GRA: "grahp3",
     COS: "125.0",
     MSRP: "1480.0",
     QH: "51",
