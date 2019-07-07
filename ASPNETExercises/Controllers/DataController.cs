@@ -18,16 +18,18 @@ namespace ASPNetExercises.Controllers
         public async Task<IActionResult> Index()
         {
             UtilityModel util = new UtilityModel(_ctx);
+            string msg = "";
             var json = await getMenuItemJsonFromWebAsync();
             try
             {
-                ViewBag.LoadedMsg = (util.loadNutritionTables(json)) ? "Menu and Item tablesloaded" : "problem loading tables";
+                msg = (util.loadNutritionTables(json)) ? "tables loaded" : "problem loading tables";
             }
             catch (Exception ex)
             {
-                ViewBag.LoadedMsg = ex.Message;
+                msg = ex.Message;
             }
-            return View("Index");
+            ViewBag.LoadedMsg = msg;
+            return View();
         }
 
         private async Task<String> getMenuItemJsonFromWebAsync()
