@@ -5,13 +5,18 @@ namespace ASPNetExercises.Models
 {
     public class CategoryViewModel
     {
+        private List<Category> _categories;
         public CategoryViewModel() { }
         public string CategoryName { get; set; }
         public int Id { get; set; }
-        public List<Category> Categories { get; set; }
+        public IEnumerable<MenuItem> MenuItems { get; set; }
         public IEnumerable<SelectListItem> GetCategories()
         {
-            return Categories.Select(category => new SelectListItem { Text = category.Name, Value = category.Id.ToString() });
+            return _categories.Select(category => new SelectListItem { Text = category.Name, Value = category.Id.ToString() });
+        }
+        public void SetCategories(List<Category> cats)
+        {
+            _categories = cats;
         }
     }
 }

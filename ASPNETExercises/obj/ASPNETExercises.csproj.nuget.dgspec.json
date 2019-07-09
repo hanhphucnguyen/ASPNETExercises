@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Phuc-pc\\source\\repos\\ASPNetExercises\\ASPNETExercises\\ASPNetExercises.csproj": {}
+    "C:\\Users\\Phuc-pc\\source\\repos\\ASPNETExercises\\ASPNETExercises\\ASPNetExercises.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Phuc-pc\\source\\repos\\ASPNetExercises\\ASPNETExercises\\ASPNetExercises.csproj": {
+    "C:\\Users\\Phuc-pc\\source\\repos\\ASPNETExercises\\ASPNETExercises\\ASPNetExercises.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNetExercises\\ASPNETExercises\\ASPNetExercises.csproj",
+        "projectUniqueName": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNETExercises\\ASPNETExercises\\ASPNetExercises.csproj",
         "projectName": "ASPNetExercises",
-        "projectPath": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNetExercises\\ASPNETExercises\\ASPNetExercises.csproj",
+        "projectPath": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNETExercises\\ASPNETExercises\\ASPNetExercises.csproj",
         "packagesPath": "C:\\Users\\Phuc-pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNetExercises\\ASPNETExercises\\obj\\",
+        "outputPath": "C:\\Users\\Phuc-pc\\source\\repos\\ASPNETExercises\\ASPNETExercises\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
