@@ -9,6 +9,8 @@ namespace ASPNetExercises.Models
         public CategoryViewModel() { }
         public string CategoryName { get; set; }
         public int Id { get; set; }
+        public int CategoryId { get; set; }
+        public int Qty { get; set; }
         public IEnumerable<MenuItem> MenuItems { get; set; }
         public IEnumerable<SelectListItem> GetCategories()
         {
