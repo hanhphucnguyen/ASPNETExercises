@@ -28,6 +28,6 @@ C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\bin\Debug\netcorea
 C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\bin\Debug\netcoreapp2.1\ASPNetExercises.Views.pdb
 C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\ASPNetExercises.Views.pdb
 C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\ASPNetExercises.csproj.CopyComplete
-C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\ASPNetExercises.csprojAssemblyReference.cache
 C:\Users\Phuc-pc\source\repos\ASPNetExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\Razor\Views\MenuItem\Index.g.cshtml.cs
 C:\Users\Phuc-pc\source\repos\ASPNETExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\Razor\Views\Category\Index - old.g.cshtml.cs
+C:\Users\Phuc-pc\source\repos\ASPNETExercises\ASPNETExercises\obj\Debug\netcoreapp2.1\Razor\Views\Tray\Index.g.cshtml.cs
