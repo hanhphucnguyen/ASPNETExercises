@@ -108,5 +108,11 @@ namespace ASPNetExercises.Controllers
             vm.SetCategories(HttpContext.Session.Get<List<Category>>("categories"));
             return View("Index", vm);
         }
+        [Route("[action]")]
+        public IActionResult GetCategories()
+        {
+            CategoryModel model = new CategoryModel(_db);
+            return Ok(model.GetAll());
+        }
     }
 }

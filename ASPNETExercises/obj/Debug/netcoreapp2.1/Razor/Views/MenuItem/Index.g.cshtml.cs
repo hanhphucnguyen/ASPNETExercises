@@ -38,8 +38,13 @@ using Newtonsoft.Json;
 
 #line default
 #line hidden
+#line 6 "C:\Users\Phuc-pc\source\repos\ASPNETExercises\ASPNETExercises\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dffc3f132c704572e074ba7443fcd424405c4cb3", @"/Views/MenuItem/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c3a40662e53f486a099fefb8c670f76d7ab68018", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4c2c278e98f7f086015cb7cd5ebb8c7167609aa4", @"/Views/_ViewImports.cshtml")]
     public class Views_MenuItem_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MenuItemViewModel>
     {
         #pragma warning disable 1998

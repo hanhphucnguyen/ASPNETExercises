@@ -21,6 +21,9 @@
         <span>
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Exercises</a>
         </span>
+        <span class="text-right m-3 font-weight-bold">
+            @Context.Session.GetString(SessionVariables.LoginStatus)
+        </span>
         <button class="navbar-toggler float-right navbar-dark" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon float-right"></span>
@@ -36,6 +39,16 @@
                     </li>
                     <li>
                         <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Categories</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-dark" asp-area="" asp-controller="Register" asp-action="Index">Register</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Logoff">Logoff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Tray" asp-action="List">Trays</a>
                     </li>
                 </ul>
             </div>

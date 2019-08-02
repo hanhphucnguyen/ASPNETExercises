@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link href="~/css/vuemodal.css" rel="stylesheet" />
+<div id="trays">
+    <div class="mt-5">
+        <div class="card">
+            <div class="card-title text-center mt-3">
+                <h3>Trays You've Ordered</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">Total Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr href="#" v-for="tray in trays" v-on:click="trayForModal=tray;loadAndShowModal();">
+                            <td>{{tray.id}}</td>
+                            <td>{{formatDate(tray.dateCreated)}}</td>
+                            <td class="text-right">{{tray.totalCalories}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <modal v-if="showModal" v-on:close="showModal = false" :tray="trayForModal" :details="detailsForModal"></modal>
+</div>
+<script src="~/js/traylist.js"></script>
+<!-- template for the modal component -->
+<script type="text/x-template" id="modal-template">
+    <transition name="modal">
+        <div class="modal-mask">
+            <div class="modal-wrapper">
+                <div class="modal-container">
+                    <button type="button" class="close" style="font-size:xx-large;" v-on:click="$emit('close')">
+                        X
+                    </button>
+                    <div class="text-center" style="font-size:larger;">
+                        <h3>Tray:{{tray.id}}</h3>
+                        {{formatDate(tray.dateCreated)}}<p></p>
+                        <img src="../images/Tray.png" style="height:60px;width:60px;margin:10px;" />
+                        <ul class="list-group vuerow">
+                            <li class="list-group-item vuerow" style="background-color:lightgray;">
+                                <span class="vuecol20 text-center">Qty</span>
+                                <span class="vuecol80">Description</span>
+                            </li>
+                            <li v-for="detail in details" class="list-group-item vuerow">
+                                <span class="vuecol20 text-center">{{detail.qty}}</span>
+                                <span class="vuecol80 text-left">{{detail.description}}</span>
+                            </li>
+                        </ul>
+                        <div v-if="details[0]" class="text-right">
+                            <div class="vuerow">
+                                <div class="vuecol80">Total Calories:</div>
+                                <div class="vuecol20 pr-2">{{details[0].totalCalories}}</div>
+                            </div>
+                            <div class="vuerow">
+                                <div class="vuecol80">Total Protein:</div>
+                                <div class="vuecol20 pr-2">{{details[0].totalProtein}}</div>
+                            </div>
+                            <div class="vuerow">
+                                <div class="vuecol80">Total Fat:</div>
+                                <div class="vuecol20 pr-2">{{details[0].totalFat}}</div>
+                            </div>
+                            <div class="vuerow">
+                                <div class="vuecol80">Total Salt:</div>
+                                <div class="vuecol20 pr-2">{{details[0].totalSalt}}</div>
+                            </div>
+                            <div class="vuerow">
+                                <div class="vuecol80">Total Cholesterol:</div>
+                                <div class="vuecol20 pr-2">{{details[0].totalCholesterol}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </transition>
+</script>

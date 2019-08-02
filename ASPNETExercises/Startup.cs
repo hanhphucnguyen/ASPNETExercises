@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using ASPNetExercises.Models;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.AspNetCore.Identity;
 
 namespace ASPNETExercises
 {
@@ -39,7 +40,12 @@ namespace ASPNETExercises
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.Configure<GzipCompressionProviderOptions>(options => options.Level = System.IO.Compression.CompressionLevel.Optimal);
             services.AddResponseCompression();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            // prevent XSRF attacks on POST methods
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            }
+            ).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             // Adds a default in-memory implementation of IDistributedCache.
             services.AddDistributedMemoryCache();
             services.AddSession(options =>
@@ -51,6 +57,24 @@ namespace ASPNETExercises
             });
 
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            // Add Identity and options
+            services.AddDefaultIdentity<ApplicationUser>().AddEntityFrameworkStores<AppDbContext>();
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = false;
+                options.Password.RequiredUniqueChars = 6;
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.AllowedForNewUsers = true;
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -71,6 +95,8 @@ namespace ASPNETExercises
             app.UseResponseCompression();
             app.UseCookiePolicy();
             app.UseSession();
+            // Identity additions
+            app.UseAuthentication();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vue Exercise #10</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="../../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFeOfe9156dSSdzKXLnBp7wOeI72NPmS0"></script>
+</head>
+<body>
+    <div id="app10" style="text-align:center;">
+        <h2>Get the Latitude and Longitude From Google</h2>
+        <h3 class="mb-3">Enter An Address:</h3>
+        <p><input type="text" v-model="address" class="mt-2" /></p>
+        <p>
+            <i style="font-size:small">
+                Example: London, ON or N5Y5R6 or 1460 Oxford St., London
+                On
+            </i>
+        </p>
+        <input type="button" v-on:click="getLatAndLng();" value="Get Lat & Lng" />
+        <p>LAT:{{lat}} - LNG:{{lng}}</p>
+    </div>
+    <script src="js/vueex10.js"></script>
+</body>
+</html>
