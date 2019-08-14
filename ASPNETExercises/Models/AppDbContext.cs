@@ -9,5 +9,6 @@ namespace ASPNetExercises.Models
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Tray> Trays { get; set; }
         public virtual DbSet<TrayItem> TrayItems { get; set; }
+        public virtual DbSet<Store> Stores { get; set; }
     }
 }

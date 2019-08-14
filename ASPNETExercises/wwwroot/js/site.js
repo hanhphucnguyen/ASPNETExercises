@@ -8,6 +8,13 @@
         $('#login_popup').modal('show');
     }
 
+    $("#jsondatartns").on("click", (e) => {
+        busySignal("/Data/Json");
+    });
+    $("#csvdatartns").on("click", (e) => {
+        busySignal("/Data/LoadCsv");
+    });
+
     // re-pop modal to show newly created add message
     if ($("#selectedId").val() > 0) {
         let data = $("#catbtn" + $("#selectedId").val()).data("details");
@@ -61,4 +68,11 @@ const CopyToModal = (id, data) => {
     $("#description").text(data.Description);
     $("#detailsGraphic").attr("src", "/images/burger.png");
     $("#selectedId").val(id);
-}
+};
+
+let busySignal = (url) => {
+    let busyImg = $("<img/>", { src: "/images/wait.gif" });
+    $("#busy").empty();
+    $("#busy").append(busyImg);
+    window.location.href = url;
+};

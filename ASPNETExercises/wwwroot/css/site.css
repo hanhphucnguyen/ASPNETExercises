@@ -13,3 +13,10 @@
     text-align: left;
     padding-left: 2%;
 }
+
+.googlemap {
+    height: 70%;
+    width: 100%;
+    margin-top: -90px;
+    min-height: 300px;
+}
