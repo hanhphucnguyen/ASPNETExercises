@@ -1,2 +1,2 @@
 # ASPNET + Vue Js
-Laptop selling store
+A web application for Laptop selling store
